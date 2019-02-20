@@ -1,5 +1,5 @@
 FROM alpine:latest
-RUN apk update && apk add python py-pip git python-dev linux-headers alpine-sdk nmap
+RUN apk update && apk add python py-pip git python-dev linux-headers alpine-sdk nmap nmap-scripts
 RUN mkdir -p /opt/dog/agents
 ADD ./nmap_agent.py /opt/dog/agents/nmap_agent.py
 ADD ./requirements.txt /opt/dog/agents/requirements.txt
